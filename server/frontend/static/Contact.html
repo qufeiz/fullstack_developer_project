@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Link the style sheets -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .banner {
+      background: url('/static/cars.jpeg') no-repeat center center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <h1>Contact Us</h1>
+  </div>
+
+  <div class="container" style="margin-top: 2rem;">
+    <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+
+    <div class="card" style="padding: 1.5rem; margin-top: 1rem; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+      <h3>Get in Touch</h3>
+      <div class="contact-info">
+        <img class="contact-icon" src="/static/contactus.png" alt="Phone Icon">
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+      </div>
+      <div class="contact-info">
+        <img class="contact-icon" src="/static/contactus.png" alt="Email Icon">
+        <p><strong>Email:</strong> <a href="mailto:info@bestcars.com">info@bestcars.com</a></p>
+      </div>
+      <p><strong>Address:</strong> 123 Best Cars Avenue, Auto City, AC 54321</p>
+    </div>
+
+    <div class="card" style="padding: 1.5rem; margin-top: 2rem; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+      <h3>Business Hours</h3>
+      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+      <p>Saturday: 10:00 AM - 4:00 PM</p>
+      <p>Sunday: Closed</p>
+    </div>
+  </div>
+</body>
+
+</html>
